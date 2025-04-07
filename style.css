@@ -1,0 +1,125 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    background: rgb(98, 98, 98);
+    background: rgb(55, 52, 52);
+    background: radial-gradient(circle, rgba(55, 52, 52, 1) 10%, rgba(17, 15, 15, 1) 60%);
+    align-items: center;
+    justify-content: center;
+}
+
+
+#main {
+    display: flex;
+}
+.textfield {
+    height: 75px;
+    width: 260px;
+    border: 2px solid rgba(128, 128, 128, 0.1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+
+
+}
+.textfield:focus{
+    border: none;
+    outline: none;
+}
+
+.button {
+    width: calc(220px / 4);
+    height: 50px;
+    border-radius: 50%;
+    margin: 4px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.oper-button {
+    color: rgb(8, 210, 8);
+    font-weight: bolder;
+}
+
+.del-button,
+.ac-button {
+    color: red;
+    font-weight: bolder;
+}
+
+.asign-button {
+    background-color: orangered;
+}
+
+/*------------------------------------------------------------------------------------------*/
+#unit-conversion {
+    margin-left: 100px;
+}
+
+.unit-Button {
+    height: 110px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: gray;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tem-button {
+    padding: 5px;
+}
+
+.menu-Button {
+    display: none;
+
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+@media (max-width:600px) {
+    .textfield {
+        border: none;
+        box-shadow: none;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .menu-Button {
+        display: contents;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 22px;
+
+    }
+
+    #unit-conversion {
+        display: none;
+    }
+}
